@@ -1,12 +1,12 @@
 # 🤔 How To Use
 
-1- npm i
+> 1- npm i
 
-2- npm run dev
+> 2- npm run dev
 
 ---
 
-🚀 Technologies
+# 🚀 Technologies
 
 Node
 
@@ -18,7 +18,7 @@ OpenPGP
 
 ---
 
-🌱 Minimal Requirements
+# 🌱 Minimal Requirements
 
 NPM/Yarn LTS
 
