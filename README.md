@@ -8,11 +8,17 @@
 
 
 🚀 Technologies
+
 Node
+
 Express
+
 SRP
+
 OpenPGP
 
 🌱 Minimal Requirements
+
 NPM/Yarn LTS
+
 NodeJs
