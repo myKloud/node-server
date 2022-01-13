@@ -1,13 +1,18 @@
 # 🤔 How To Use
 
-> 1- npm i
+```
+ npm i
 
-> 2- npm run dev
+ npm run dev
+
+```
+
 
 ---
 
 # 🚀 Technologies
 
+```
 Node
 
 Express
@@ -15,11 +20,12 @@ Express
 SRP
 
 OpenPGP
-
+```
 ---
 
 # 🌱 Minimal Requirements
-
+```
 NPM/Yarn LTS
 
 NodeJs
+```
