@@ -179,6 +179,213 @@ const userSalts =(req, res)=>{
 }
 
 
+const userCookies =(req, res)=>{
+  try {
+    res.json({Code:1000,
+      UID:"4y7rsuiztewyi74yqiludqw6luecutcz",
+      LocalID:6}
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
+
+
+const userAddress =(req, res)=>{
+  try {
+    res.json(
+    {Code:1000,
+    Addresses:[
+      {ID:"VgNpIulfYqwsSE1A87TN02tfnzCuM_OgGG0Bi9Y5_am6B5X5mltWuz1nsASX8CdruwRWamAkxyQhQ02H8M2tfw==",
+      DomainID:"l8vWAXHBQmv0u7OVtPbcqMa4iwQaBqowINSQjPrxAr-Da8fVPKUkUcqAq30_BCxj1X0nW70HQRmAa-rIvzmKUA==",
+      Email:"omarpgp@protonmail.com",
+      Status:1,
+      Type:1,
+      Receive:1,
+      Send:1,
+      DisplayName:"omarpgp",
+      Signature:"",
+      Order:1,
+      Priority:1,
+      ConfirmationState:1,
+      HasKeys:1,
+      SignedKeyList:{MinEpochID:null,
+                 MaxEpochID:null,
+                 ExpectedMinEpochID:1,
+                 Data:"[{\"Primary\":1,\"Flags\":3,\"Fingerprint\":\"7511208ceb2177c356761e50ef74e91cb7e84246\",\"SHA256Fingerprints\":[\"244ecd3e3ddf27c372f587986effae37ad56d9cadb364ed5922bbca011a37e11\",\"310d44a1db31ddf87d764baaf3f3754a15bcf2f462d5172bd28df4c794866478\"]}]",
+                 ObsolescenceToken:null,
+                 Signature:"-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwnUEARYKAAYFAmHaylsAIQkQ73TpHLfoQkYWIQR1ESCM6yF3w1Z2HlDvdOkc\r\nt+hCRiKRAP9xkecZn3AMO7hyImnrTJP+JDQKdXl7Q0qL0IUIevU6wAEAlOtw\r\nAT/16qnSU2A/Ymlkuo6jolJrXNw1gcvcawCDHQw=\r\n=wIzO\r\n-----END PGP SIGNATURE-----\r\n"},
+      Keys:[
+        {ID:"WE-6WqXlvFIicuGxk7EjozTiCQnyk3AfyfCW_7mnaZBkI9TWvDfggv_oGbVU8tRY8Na75cX802BfGxbcZ5UPgQ==",
+        Primary:1,
+        Flags:3,
+        Fingerprint:"7511208ceb2177c356761e50ef74e91cb7e84246",
+        Fingerprints:["0634e9690ff9c66f5e6d933e94b0199e7c543bca","7511208ceb2177c356761e50ef74e91cb7e84246"],
+        PublicKey:"-----BEGIN PGP PUBLIC KEY BLOCK-----\nVersion: ProtonMail\n\nxjMEYdrKHxYJKwYBBAHaRw8BAQdASoekZ3lL6gjwsZfDQ3ZT+H+a5FVQjchM\nE+Ntx/E1fEPNL29tYXJwZ3BAcHJvdG9ubWFpbC5jb20gPG9tYXJwZ3BAcHJv\ndG9ubWFpbC5jb20+wo8EEBYKACAFAmHayh8GCwkHCAMCBBUICgIEFgIBAAIZ\nAQIbAwIeAQAhCRDvdOkct+hCRhYhBHURIIzrIXfDVnYeUO906Ry36EJGS/YB\nAJep8tXjqSulQikaHvSr0h52VMQ8sl7cbIM6NYNNTzYLAP9sEM62uZbXqWh9\nvVuN2yu2ffvUhiXS4ygJBQJ6ZeekBM44BGHayh8SCisGAQQBl1UBBQEBB0Bp\ndE/SndyKtRswQ5dRjwIosuQZWYrBMDlMgiHdos/MdgMBCAfCeAQYFggACQUC\nYdrKHwIbDAAhCRDvdOkct+hCRhYhBHURIIzrIXfDVnYeUO906Ry36EJGvkcA\n+QGMrTktRLrhP0rjnReErmn71mVpkMAQ+kqMXSdRtypJAP9mgbWRVJrhseRE\nqM5/xNTO17ajBwadkR7sJukQPcpmBA==\n=cS5C\n-----END PGP PUBLIC KEY BLOCK-----\n",
+        Active:1,
+        Version:3,
+        Activation:null,
+        PrivateKey:"-----BEGIN PGP PRIVATE KEY BLOCK-----\nVersion: ProtonMail\n\nxYYEYdrKHxYJKwYBBAHaRw8BAQdASoekZ3lL6gjwsZfDQ3ZT+H+a5FVQjchM\nE+Ntx/E1fEP+CQMI366T9V7BYzdgIDyF8mAHeUawYv6l67mgkSFy9i1n4pfs\nZemNEOSYNVjvZD1rmo8CHgNJKWA2KsxZi5BTEJnKitkXhL2lCptJ9Ngs43WR\no80vb21hcnBncEBwcm90b25tYWlsLmNvbSA8b21hcnBncEBwcm90b25tYWls\nLmNvbT7CjwQQFgoAIAUCYdrKHwYLCQcIAwIEFQgKAgQWAgEAAhkBAhsDAh4B\nACEJEO906Ry36EJGFiEEdREgjOshd8NWdh5Q73TpHLfoQkZL9gEAl6ny1eOp\nK6VCKRoe9KvSHnZUxDyyXtxsgzo1g01PNgsA/2wQzra5ltepaH29W43bK7Z9\n+9SGJdLjKAkFAnpl56QEx4sEYdrKHxIKKwYBBAGXVQEFAQEHQGl0T9Kd3Iq1\nGzBDl1GPAiiy5BlZisEwOUyCId2iz8x2AwEIB/4JAwjk5tQVpIbb1GBfIqYD\nIosp6EGUCWOvDuBQrc4UP0Zx1uAHnFMNcyib/lejXBxqueJGKSJlIAhWvUvg\nKjF7qU52zkQbZ30suUK0H+2j+HuKwngEGBYIAAkFAmHayh8CGwwAIQkQ73Tp\nHLfoQkYWIQR1ESCM6yF3w1Z2HlDvdOkct+hCRr5HAPkBjK05LUS64T9K450X\nhK5p+9ZlaZDAEPpKjF0nUbcqSQD/ZoG1kVSa4bHkRKjOf8TUzte2owcGnZEe\n7CbpED3KZgQ=\n=YOMZ\n-----END PGP PRIVATE KEY BLOCK-----\n",
+        Token:"-----BEGIN PGP MESSAGE-----\nVersion: ProtonMail\n\nwV4DBpzEmvhq64kSAQdAo4W+sepL8ol0JcGDSJhGT45OpbZv64qxfp3TT5SJ\nhSwwVkAV+Un/09sFAxsSnBKwGLgOiDLnysP3HgzABdifwDzA9Z/F7t+/QUYi\nr07HhKs10ngBpzW0Q3pYh78g4qTcnOP7OA6Q3AsaFxR/5c3Uca7KImgRX3Xn\neeR+/6ePfJhoPHC+Ynch06OLPWsO+j5JA03WTOiOSb+B0HbyM5pGhAi99VY9\nAL1mnNwPh2ipDhUwhcVkh2i+xHzBt5pqjHf4ZkUQgMGeqYCbUHg=\n=4bGA\n-----END PGP MESSAGE-----\n",
+        Signature:"-----BEGIN PGP SIGNATURE-----\nVersion: ProtonMail\n\nwnUEARYKAAYFAmHaylsAIQkQzReZ6rPvWWUWIQS1jT3DRy5no4YyLjXNF5nq\ns+9ZZVYhAQCg5h7JmOaXntogWgFvSrHimdN6cj/4nAKVhzszpuBQtgD/YEiu\nKaeXadNf+Ykp5kVqackQK05S6O4Fem6vbUBMAQc=\n=EAGf\n-----END PGP SIGNATURE-----\n"}]}],
+    Total:1}
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
+
+
+
+
+const features =(req, res)=>{
+  try {
+    res.json(
+      {Code:1000,
+      Features:[
+        {Code:"EarlyAccess",
+        Type:"enumeration",
+        Global:false,
+        DefaultValue:"beta",
+        Value:"beta",
+        Options:["alpha","beta"],
+        Writable:true}
+      ],
+      Total:1}
+      
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
+
+
+
+const settings =(req, res)=>{
+  try {
+    res.json(
+      {Code:1000,
+      UserSettings:{
+        Email:{Value:"omarzead19@yahoo.com",Status:0,Notify:1,Reset:1},
+        Phone:{Value:null,Status:0,Notify:1,Reset:1},
+        Password:{Mode:1,ExpirationTime:null},
+        PasswordMode:1,
+        "2FA":{Enabled:0,Allowed:3,ExpirationTime:null,U2FKeys:[],RegisteredKeys:[]},
+        TOTP:0,
+        News:239,
+        Locale:"en_US",
+        LogAuth:1,
+        InvoiceText:"",
+        Density:0,
+        Theme:null,
+        ThemeType:0,
+        WeekStart:0,
+        DateFormat:0,
+        TimeFormat:0,
+        Flags:{Welcomed:1,InAppPromosHidden:0},
+        TwoFactor:0,
+        Welcome:1,
+        WelcomeFlag:1,
+        AppWelcome:{Mail:["Web"]},
+        EarlyAccess:0,
+        FontSize:0,
+        Checklists:["get-started"]
+      }
+      }
+      
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
+
+
+const labels =(req, res)=>{
+  try {
+    res.json(
+      {Code:1000,
+      Labels:[]} 
+      
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
+
+const mailSettings =(req, res)=>{
+  try {
+    res.json(
+      {"Code":1000,
+      "MailSettings":{"LastLoginTime":1642072178,"AutoSaveContacts":1,"AutoWildcardSearch":1,"ComposerMode":0,"FontSize":null,"FontFace":null,"MessageButtons":0,"ShowImages":2,"ShowMoved":0,"ViewMode":0,"ViewLayout":0,"SwipeLeft":3,"SwipeRight":0,"AlsoArchive":0,"Hotkeys":0,"Shortcuts":1,"PMSignature":2,"ImageProxy":0,"TLS":0,"RightToLeft":0,"AttachPublicKey":0,"Sign":0,"PGPScheme":16,"PromptPin":0,"KT":0,"Autocrypt":0,"StickyLabels":0,"ExpandFolders":0,"ConfirmLink":1,"DelaySendSeconds":10,"ThemeType":0,"ThemeVersion":null,"Theme":"","DisplayName":"","Signature":"",
+      "AutoResponder":{"StartTime":0,"EndTime":0,"DaysSelected":[],"Repeat":0,"Subject":"Auto","Message":"","IsEnabled":false,"Zone":"Europe/Zurich"}
+      ,"EnableFolderColor":0,"InheritParentFolderColor":1,"NumMessagePerPage":50,"RecipientLimit":100,"DraftMIMEType":"text/html","ReceiveMIMEType":"text/html","ShowMIMEType":"text/html"}
+    } 
+      
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
+
+
+
+const emailContact =(req, res)=>{
+  try {
+    res.json(
+      {"Code":1000,
+      "ContactEmails":[
+        {"ID":"loDF07uR2IGVQzb4BZWT2UQy7Lhbxt5Sc1GsHGQIuonPqPOVxAjgYGYSiqSoSeKEG8QjfhzGsq2RH0GN4KGHMA==","Name":"omarpgp@protonmail.com","Email":"omarpgp@protonmail.com","Type":[],"Defaults":1,"Order":1,"LastUsedTime":1641728985,"ContactID":"vmgvijEtjaisdHcnUPJUf5KSgbKba-aghv18RUVKF-mxYEflvmadOk9sGTnOZ7pGKRImXUQ4LaigkMh4i4Wy9w==","LabelIDs":[],"CanonicalEmail":"omarpgp@protonmail.com"
+      }
+     ],
+      "Total":1}
+      
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
+
+
+const latestEvent =(req, res)=>{
+  try {
+    res.json({
+      Code: 1000,
+      EventID: "btQIQAdXsZXobkaIGilFYVzn6dBhQ3aWvVJYWKnFsVMzLWO2_7HPW1N2kZRITGtQ2qQwkdLPq8TykQx1hv1ymA==",
+      More: 0,
+      Notices:[],
+      Refresh: 0
+    }
+      
+      
+
+    );
+  } catch (error) {
+    console.error("error");
+    res.send("user failed");
+  }
+
+}
 
 
 
@@ -228,4 +435,4 @@ const authorization = (p) => {
   };
 };
 
-module.exports = { userSalts , userinfo , info, checkLogin, authentication, authorization };
+module.exports = { latestEvent ,emailContact , mailSettings, labels, settings ,features, userAddress , userCookies , userSalts , userinfo , info, checkLogin, authentication, authorization };
